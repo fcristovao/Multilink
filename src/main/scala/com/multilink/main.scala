@@ -10,7 +10,7 @@ import com.multilink.nodes.FileServer.{AttemptLogin, ConnectionEstablished, Conn
 
 
 object HelloWorldMain {
-
+/*
   final case class SayHello(name: String)
 
   def apply(): Behavior[SayHello] =
@@ -23,7 +23,7 @@ object HelloWorldMain {
         Behaviors.same
       }
     }
-
+*/
 
   def main(args: Array[String]): Unit = {
     /*
@@ -32,7 +32,7 @@ object HelloWorldMain {
 
     system ! HelloWorldMain.SayHello("World")
     */
-    MultilinkCLI.run()
-    
+    new MultilinkCLI(new MultilinkClient()).run()
+
   }
 }
