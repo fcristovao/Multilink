@@ -10,5 +10,6 @@ lazy val root = (project in file("."))
   )
 
 libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion
+  "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
+  "com.monovore" %% "decline" % "2.4.1"
   )

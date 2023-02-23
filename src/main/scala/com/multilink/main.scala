@@ -26,9 +26,13 @@ object HelloWorldMain {
 
 
   def main(args: Array[String]): Unit = {
+    /*
     val system: ActorSystem[HelloWorldMain.SayHello] =
       ActorSystem(HelloWorldMain(), "MultiLink")
 
     system ! HelloWorldMain.SayHello("World")
+    */
+    MultilinkCLI.run()
+    
   }
 }
